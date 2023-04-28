@@ -104,5 +104,6 @@ footer {
     background: var(--cor_de_fundo);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     bottom: 0;
 }
