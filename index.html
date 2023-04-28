@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Armazém</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.svg" alt="Logo do projeto">
+        <div class="input">
+            <input class="input-pesquisar_item" type="text" placeholder="Nome do item desejado">
+            <button class="btn btn-pesquisar" type="submit">
+                <img src="img/btn-pesquisar.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <section class="section-itens">
+        <h2 class="titulo">itens disponíveis</h2>
+        <ul class="itens">
+            <li class="item">
+                <h3 class="item-nome">Caixa de fósforo 1</h3>
+                <button class="btn-item">Selecionar</button>
+            </li>
+            <li class="item">
+                <h3 class="item-nome">Caixa de fósforo 2</h3>
+                <button class="btn-item btn-selecionado">Selecionado</button>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <button id="btn_adicionar" class="btn btn-footer">
+            <img src="img/btn-adicionar_item.svg" alt="">
+        </button>
+        <button id="btn=pegar_item" class="btn btn-pegar_item">
+            <img src="img/btn-pegar_item.svg" alt="">
+        </button>
+        <button id="btn-ajuda_home" class="btn btn-footer">
+            <img src="img/btn-help.svg" alt="">
+        </button>
+    </footer>
+</body>
+</html>
