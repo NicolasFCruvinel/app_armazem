@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+/* Variáveis */
+:root {
+    --cor_de_fundo: linear-gradient(93.91deg, #023047 1.82%, #219EBC 300.95%);
+    --cor_cabeçalho: #fcfcfc;
+    --font-family: 'Josefin Sans', sans-serif;
+    --cor-btn-desativado: #D9D9D9;
+    --cor-btn-selecionado: #FB8500;
+}
+
+body {
+    font-family: var(--font-family);
+    text-align: center;
+    background: var(--cor_de_fundo);
+}
+
+/* Cabecalho */
+
+header {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    background: var(--cor_cabeçalho);    
+}
+
+.input {
+    position: relative;
+    display: flex;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+/* Corpo - sessão dos itens disponíveis */
+
+.section-principal {
+    text-align: center;
+    background: var(--cor_de_fundo);
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 2em;
+    margin-bottom: 2.4em;
+    color: var(--cor_cabeçalho)
+}
+
+
+.caixa-login{
+    background: var(--cor_cabeçalho);
+    width: 290.86px;
+    height: 280px;
+    position: absolute;
+    left: 35px;
+    top: 180px;
+    border-radius: 8px;
+
+}
+
+.text{
+    font-family: var(--font-family);
+    font-size: 18px;
+    left: 88px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 1em;
+}
+
+.caixa-id{
+    width: 190px;
+    height: 63px;
+    top: 210;
+    margin: 0 auto;
+}
+
+.btn-id {
+    width: 190px;
+    height: 35px;
+    border: 1px solid #8ecae6;
+    border-radius: 17.5px;
+    top:238px;
+    left: 85px;
+    background-color: var(--cor_cabeçalho);
+}
+
+.caixa-senha{
+    width: 190px;
+    height: 63px;
+    top: 295;
+    margin: 0 auto;
+}
+
+.btn-senha{
+    width: 190px;
+    height: 35px;
+    border: 1px solid #8ecae6;
+    border-radius: 17.5px;
+    top:300px;
+    left: 85px;
+    background-color: var(--cor_cabeçalho);
+}
+
+.btn-enviar {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 100;
+    border: 0;
+    border-radius: 20px;
+    position: absolute;
+    width: 108px;
+    height: 40px;
+    left: 91px;
+    top: 210px;
+    background-color: var(--cor-btn-selecionado);
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 154px;
+    background: var(--cor_de_fundo);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+}
