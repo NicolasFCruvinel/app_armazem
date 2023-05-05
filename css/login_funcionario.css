@@ -38,7 +38,6 @@ header {
 }
 
 
-
 /* Corpo - sessão dos itens disponíveis */
 
 .section-principal {
@@ -90,6 +89,7 @@ header {
     top:238px;
     left: 85px;
     background-color: var(--cor_cabeçalho);
+    padding-left: 10px;
 }
 
 .caixa-senha{
@@ -107,6 +107,7 @@ header {
     top:300px;
     left: 85px;
     background-color: var(--cor_cabeçalho);
+    padding-left: 10px;
 }
 
 .btn-enviar {
