@@ -1,11 +1,29 @@
-[{
-    "adm":[{
-        "nome": "Nicolas Cruvinel",
-        "ID": 11915366,
-        "Senha": 123456789
-    },{
-        "nome": "Virginia Di Mauro",
-        "ID": 14353000,
-        "Senha": 987654321
-    }]
-}]
+{
+    "adm":[
+        {
+            "nome": "Nicolas Cruvinel",
+            "ID": 11915366,
+            "Senha": 1111
+        },{
+            "nome": "Virginia Di Mauro",
+            "ID": 14353000,
+            "Senha": 2222
+        },{
+            "nome": "Catarina Luz",
+            "ID": 11819636,
+            "Senha": 3333
+        },{
+            "nome": "",
+            "ID": 0,
+            "Senha": 4444
+        },{
+            "nome": "",
+            "ID": 0,
+            "Senha": 5555
+        },{
+            "nome": "",
+            "ID": 0,
+            "Senha": 6666
+        }
+    ]
+}

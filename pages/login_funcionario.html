@@ -7,6 +7,7 @@
 
     <title>Login</title>
 
+    <script type="text/javascript" src="/js/login.js"></script>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/login_funcionario.css">
 </head>
@@ -24,16 +25,14 @@
         <section class = "caixa-login"> 
             <section class = "caixa-id">
                 <h2 class = "text">ID:</h2>
-                <input class="btn-id" type="text"></input> <!--Input para para poder adicionar a informação, nesse campo n está dando de acrescentar nada pois é um botão-->
+                <input id="id" class="btn-id" type="text"></input> <!--Input para para poder adicionar a informação, nesse campo n está dando de acrescentar nada pois é um botão-->
             </section>
 
             <section class = "caixa-senha">    
                 <h2 class = "text">Senha:</h2>
-                <input class="btn btn-senha" type="password"></input> <!--mesma coisa da linha 26-->
+                <input id="senha" class="btn btn-senha" type="password"></input> <!--mesma coisa da linha 26-->
             </section>
-            <!-- Ancora procisório para acessar página de funcionário -->
-            <a href="/pages/tela_funcionario.html" class="btn btn-enviar">Entrar</a>
-            <!-- <button class="btn btn-enviar">Entrar</button> -->
+            <button onclick="logar()" class="btn btn-enviar">Entrar</button>
         </section>
     </section>
     <!-- Coloquei o footer dentro do Body, todo código da página precisa estar dentro dele -->
