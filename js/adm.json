@@ -1,0 +1,12 @@
+[{
+    "administradores": [{
+        "Nome": "Nicolas Cruvinel",
+        "ID": 11915366,
+        "Senha": 123456789
+    },
+    {
+        "Nome": "Fulano de tal",
+        "ID": 11000000,
+        "Senha": 987654321
+    }]
+}]
