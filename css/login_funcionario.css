@@ -123,6 +123,11 @@ header {
     top: 210px;
     background-color: var(--cor-btn-selecionado);
 
+    /*Referente ao ancora provisório*/
+    text-decoration: none;
+    color:  #2c2c2c;
+
+
 }
 
 footer {
