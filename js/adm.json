@@ -1,14 +1,4 @@
 [{
-<<<<<<< HEAD
-    "administradores": [{
-        "Nome": "Nicolas Cruvinel",
-        "ID": 11915366,
-        "Senha": 123456789
-    },
-    {
-        "Nome": "Fulano de tal",
-        "ID": 11000000,
-=======
     "adm":[{
         "nome": "Nicolas Cruvinel",
         "ID": 11915366,
@@ -16,7 +6,6 @@
     },{
         "nome": "Virginia Di Mauro",
         "ID": 14353000,
->>>>>>> 8f3446d0b209244980bf457495a5d7bb74d7ae84
         "Senha": 987654321
     }]
 }]
