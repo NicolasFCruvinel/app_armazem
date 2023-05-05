@@ -21,41 +21,26 @@ body {
 
 header {
     display: flex;
-    height: 96px;
+    height: 48px;
     width: 100%;
     background: var(--cor-de-fundo);
     align-items: center;
-    justify-content: space-evenly;
-}
-
-.input-pesquisar_item {
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    border: 0;
-    padding-right: 40px;
+    justify-content:first baseline;
+    gap: 2em;
     padding-left: 15px;
 }
 
-.input-pesquisar_item::placeholder {
-    font-family: var(--font-family);
+.titulo_page {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--cor-branco-fonte);
 }
 
-.input {
-    position: relative;
-    display: inline-block;
-}
-
-.btn-pesquisar {
-    position: absolute;
-    top: -4px;
-    right: -4px;
-    padding: 10px;
-}
 
 /* Corpo - sessão dos itens disponíveis */
 
 .section-itens {
+    margin-top: 4em;
     text-align: center;
 }
 
