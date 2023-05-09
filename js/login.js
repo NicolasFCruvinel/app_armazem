@@ -25,24 +25,17 @@ const adm = [{
         Senha: "6666"
     }
 ]
-
+//Função logar, chamada ao aperatar botão
 function logar(){
     var id = document.getElementById("id");
     var senha = document.getElementById("senha");
+
     var contador = 0;
-
-    console.log(typeof id.value+id.value);
-    console.log(typeof senha.value+senha.value);
-
-    console.log(adm[0].ID);
-    console.log(adm[0].Senha)
 
     adm.forEach(e  => {
         if(id.value == e.ID && senha.value == e.Senha){
             contador = 1;
         }
-        console.log(e.ID);
-        console.log(e.Senha)
     });
 
     if(contador>0){
