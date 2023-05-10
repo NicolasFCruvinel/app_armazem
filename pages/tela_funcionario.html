@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/tela_funcionario.css">
+
+    <script type="text/javascript" src="/js/error_cadastro.js"></script>
 </head>
 <body>
     <header>
@@ -20,43 +22,43 @@
             <ul class="un__coluna1">
                 <li class="un__item">
                     <h3 class="un__item-titulo">Unidade 1:</h3>
-                    <p class="un__item-status status-indisponivel">Indisponível</p>
+                    <p id = "u1" class="un__item-status status-indisponivel">Indisponível</p>
                 </li>
                 <li class="un__item">
                     <h3 class="un__item-titulo">Unidade 3:</h3>
-                    <p class="un__item-status status-indisponivel">Indisponível</p>
+                    <p id = "u3" class="un__item-status status-indisponivel">Indisponível</p>
                 </li>
                 <li class="un__item">
                     <h3 class="un__item-titulo">Unidade 5:</h3>
-                    <p class="un__item-status status-disponivel">Disponível</p>
+                    <p id = "u5" class="un__item-status status-disponivel">Disponível</p>
                 </li>
             </ul>
             <ul class="un__coluna2">
                 <li class="un__item">
                     <h3 class="un__item-titulo">Unidade 2:</h3>
-                    <p class="un__item-status status-indisponivel">Indisponível</p>
+                    <p id = "u2" class="un__item-status status-indisponivel">Indisponível</p>
                 </li>
                 <li class="un__item">
                     <h3 class="un__item-titulo">Unidade 4:</h3>
-                    <p class="un__item-status status-disponivel">Disponível</p>
+                    <p id = "u4" class="un__item-status status-disponivel">Disponível</p>
                 </li>
                 <li class="un__item">
                     <h3 class="un__item-titulo">Unidade 6:</h3>
-                    <p class="un__item-status status-indisponivel">Indisponível</p>
+                    <p id = "u6" class="un__item-status status-indisponivel">Indisponível</p>
                 </li>
             </ul>
         </div>
     </section>
     <form class="forms__add_item" action="----------------"> <!-- Ver como utilziar o action e method para mandar os dados para o arquivo json-->
-        <div class="campo-nome">
+        <div id = "item" class="campo-nome">
             <label for="fomrs__add_item-nome_item" class="nome_item">Nome do item:</label>
             <input class="input-nome" id="fomrs__add_item-nome_item" type="text">
         </div>
-        <div class="campo-unidade">
+        <div id = "unidade" class="campo-unidade">
             <label for="fomrs__add_item-unidade" class="unidade">Unidade(Número):</label>
             <input class="input-unidade" id="fomrs__add_item-unidade" type="text">
         </div>
-        <button class="btn-adicionar_item" type="submit">Adicionar</button>
+        <button onclick="cadastro()" class="btn-adicionar_item" type="submit">Adicionar</button>
     </form>
 </body>
 </html>
