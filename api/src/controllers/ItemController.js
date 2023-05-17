@@ -8,6 +8,7 @@ module.exports = {
     async index(request, response) {
         try {
             const itens = await Item.find();
+
             return response.status(200).json({itens});
         } catch (err) {
             response.status(500).json({error: err.message});
@@ -51,6 +52,7 @@ module.exports = {
 
         try {
             await response.item.save();
+
             return response.status(200).json({message: "Item atualizado com sucesso"});
         }catch(err){
             return response.status(400).json({error: err.message});
@@ -60,10 +62,23 @@ module.exports = {
     //Deletando informação do banco de dados
     async delete(request, response) {
         try{
-            await response.item.remove(); //função com erro, diz que n existe
+            await response.item.deleteOne(); //função com erro, diz que n existe
+
             return response.status(200).json({message: "Item deletado com sucesso"});
         }catch(err) {
             return response.status(500).json({error: err.message});
+        }
+    },
+
+    async updateDisponivel(request, response){
+        response.item.disponivel = !response.item.disponivel;
+
+        try{
+            await response.item.save();
+
+            return response.status(200).json({message: `Item ${response.item.disponivel ? "Disponível" : "Indisponível"}`});
+        }catch(err){
+            response.status(400).json({error: err.message});
         }
     }
 }

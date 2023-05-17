@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+// Criando esquema de armazenamento de banco de dados
+
 const itemSchema = new mongoose.Schema({
     _id: {
         type: String,
