@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router";
+
 // declarando os administradores:
 const adm = [{
         nome: "Nicolas Cruvinel",
@@ -39,7 +41,11 @@ function logar(){
     });
 
     if(contador>0){
-        window.location.href = "../pages/tela_funcionario.html";
+        const navigate = useNavigate();
+
+        const handleClick = async () => {
+            await navigate('/addItem');
+        };
     }else{
         alert("Usuário ou senha inválidos")
     }

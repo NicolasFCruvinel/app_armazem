@@ -1,45 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Armazém</title>
-
-    <link rel="stylesheet" href="../src/styles/reset.css">
-    <link rel="stylesheet" href="../src/styles/index.css">
-</head>
-<body>
-    <header>
-        <img width="35px" src="../src/img/Logo.svg" alt="Logo do projeto">
-        <h1 class="titulo_page">app - Armazem</h1>
-    </header>
-
-    <section class="section-itens">
-        <h2 class="titulo">itens disponíveis</h2>
-        <ul class="itens">
-            <li class="item">
-                <h3 class="item-nome">Caixa de fósforo 1</h3>
-                <button class="btn-item">Selecionar</button>
-            </li>
-            <li class="item">
-                <h3 class="item-nome">Caixa de fósforo 2</h3>
-                <button class="btn-item btn-selecionado">Selecionado</button>
-            </li>
-        </ul>
-    </section>
-
-    <footer>
-        <a href="pages/login_funcionario.html" id="btn_adicionar" class="btn btn-footer">
-            <img src="img/btn-adicionar_item.svg" alt="">
-        </a>
-        <button id="btn=pegar_item" class="btn btn-pegar_item">
-            <img src="img/btn-pegar_item.svg" alt="">
-        </button>
-        <a href="/pages/ajuda_index.html" id="btn-ajuda_home" class="btn btn-footer">
-            <img src="img/btn-help.svg" alt="">
-        </a>
-    </footer>
-</body>
+    <meta
+      name="app-armazem"
+      content="sistema de visualiazaçãoe e interação com armazenamento"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>app-armazem</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+  </body>
 </html>

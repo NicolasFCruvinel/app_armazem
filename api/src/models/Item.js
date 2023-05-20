@@ -12,7 +12,7 @@ const itemSchema = new mongoose.Schema({
         required: true,
     },
     unidade: {
-        type: String,
+        type: Number,
         required: true,
     },
     disponivel: {
