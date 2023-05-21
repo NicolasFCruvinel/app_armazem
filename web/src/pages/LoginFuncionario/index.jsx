@@ -1,5 +1,5 @@
 // React
-import React, { useState }from "react";
+//import React, { useState }from "react";
 
 // Styles 
 import { Container } from "./styles"
@@ -8,21 +8,19 @@ import { Container } from "./styles"
 import Header from "../../components/HeaderPage"
 
 //  Link from Routes
-import { useNavigate, redirect } from 'react-router-dom';
+//import { useNavigate, redirect } from 'react-router-dom';
 
 // Imagens
-import Logo from "../../assets/img/Logo.svg"
+//import Logo from "../../assets/img/Logo.svg"
 
 export default function Login(){
 
-    /////////////////////////////////////////////
-    //const navigate = useNavigate();
+    /*
+    const navigate = useNavigate();
 
-    //const handleClick = async () => {
-    //    await navigate('/addItem');
-    //};
-    ////////////////////////////////////////////////
-
+    const handleClick = async () => {
+        await navigate('/addItem');
+    };
     const [inputId, setInputId] = useState('');
     const [inputSenha, setInputSenha] = useState('');
     
@@ -51,12 +49,11 @@ export default function Login(){
         }
         // Faça algo com o valor do input
     };
-
-////////////////////////////////////////////////////////////////////////////////////////
+*/
     return (
         <Container>
             <Header/>
-            <section class = "section-principal">
+            {/*<section class = "section-principal">
                 <h1 class = "titulo">Login</h1>
                 <forms onSubmit={handleSubmit} class = "caixa-login"> 
                     <div class = "caixa-id">
@@ -73,7 +70,7 @@ export default function Login(){
             </section>
             <footer>
                 <img src={Logo} alt="Logo do projeto"/>
-            </footer>
+            </footer> */}
         </Container>
     )
 }

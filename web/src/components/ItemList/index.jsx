@@ -24,7 +24,7 @@ export default function ItemList (){
         <Container>
             <h3>Itens disponíveis</h3>
             <ItemListWrapper>
-                { itens?. map((item) => (
+                { itens?.map((item) => (
                     <Item
                         key={item._id}
                         id = {item._id}
