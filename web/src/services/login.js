@@ -1,7 +1,11 @@
-import { useNavigate } from "react-router";
+import React from "react";
+import { useNavigate } from 'react-router-dom';
 
-// declarando os administradores:
-const adm = [{
+///////////////////////////////////////////////////////
+export function auxLogin(id, senha){
+    const navigate = useNavigate();
+
+    const adm = [{
         nome: "Nicolas Cruvinel",
         ID: "11915366",
         Senha: "1111"
@@ -26,27 +30,28 @@ const adm = [{
         ID: "11802822",
         Senha: "6666"
     }
-]
-//Função logar, chamada ao aperatar botão
-function logar(){
-    var id = document.getElementById("id");
-    var senha = document.getElementById("senha");
+    ]
+    ////////////////////////////////////////////////////////
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        var contador = 0;
 
-    var contador = 0;
+        adm.forEach(e  => {
 
-    adm.forEach(e  => {
-        if(id.value == e.ID && senha.value == e.Senha){
-            contador = 1;
+            if(id == e.ID && senha == e.Senha){
+                contador = 1;
+            }
+        });
+
+        // Fazer a validação com as informações do formulário
+        if (contador>0) {
+
+            // Redirecionar para outra página
+            navigate("/addItem")
+        } else {
+            alert("Usuário ou senha inválidos")
         }
-    });
+    };
 
-    if(contador>0){
-        const navigate = useNavigate();
-
-        const handleClick = async () => {
-            await navigate('/addItem');
-        };
-    }else{
-        alert("Usuário ou senha inválidos")
-    }
+    return handleSubmit;
 }

@@ -19,7 +19,7 @@ export default function ItemList (){
     const handleClick = (buttonId) => {
         setActiveButton(buttonId);
     };
-    console.log(itens)
+    
     return (
         <Container>
             <h3>Itens disponíveis</h3>

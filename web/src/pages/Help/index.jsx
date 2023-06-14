@@ -23,18 +23,18 @@ export default function Help(){
                 </Link>
             </Header>
             <Inform>
-                <h1 class="titulo">Seção de itens disponíveis:</h1>
-                <p class="paragrafo">Você pode verificar uma lista com todos os itens disponíveis no nosso armazem. 
+                <h1 className="titulo">Seção de itens disponíveis:</h1>
+                <p className="paragrafo">Você pode verificar uma lista com todos os itens disponíveis no nosso armazem. 
                 Precisando apenas prescionar o botão cinza ao lado para fazelo ser selecionado.</p>
                 <img src={exp_btn}width="200px" alt=""/>
-                <p class="paragrafo">Depois de verificar se o item escolhido está selecionado, resta apenas apertar no botão para mandar uma aquisição de busca para o item.</p>
+                <p className="paragrafo">Depois de verificar se o item escolhido está selecionado, resta apenas apertar no botão para mandar uma aquisição de busca para o item.</p>
                 <Flex>
                     <img src={btn_pegar}alt=""/>
-                    <p class="paragrafo box">Botão para mandar aquisição</p>
+                    <p className="paragrafo box">Botão para mandar aquisição</p>
                 </Flex>
                 <Flex>
                     <img src={btn_add} alt=""/>
-                    <p class="paragrafo box">Botão para adicionar itens (permitido apenas para administradores).</p>
+                    <p className="paragrafo box">Botão para adicionar itens (permitido apenas para administradores).</p>
                 </Flex>
             </Inform>'
         </>

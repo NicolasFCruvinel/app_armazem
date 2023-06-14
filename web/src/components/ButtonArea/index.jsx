@@ -21,7 +21,7 @@ export default function ButtonArea (){
             <Link to="/login">
                 <img src={btn_add} alt="add"/>
             </Link>
-            <button id="btn=pegar_item" class="btn btn-pegar_item">
+            <button id="btn=pegar_item" className="btn btn-pegar_item">
                 <img src={btn_pegar} alt="pegar"/>
             </button>
             <Link to="/help">
